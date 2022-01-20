@@ -2,7 +2,7 @@ STEPS:
 
 Before starting, install and setup MetaMask in Chrome Browser.
 
-1. Open and setup Remix in browser (https://remix.ethereum.org)
+1. Open and setup Remix in browser https://remix.ethereum.org
 
 2. Copy the Contract code https://github.com/Thomasxyz90/Flash-Loan/blob/main/Flash%20Loan%20Solidity%20Contract
 
