@@ -4,7 +4,7 @@ Before starting, install and setup MetaMask in Chrome Browser.
 
 1. Open and setup Remix in browser (https://remix.ethereum.org)
 
-2. Copy the Contract code https://drive.google.com/file/d/1TkpBrCf9boUsy1BXTFcX8QGkqYcUHTm_/view?usp=sharing
+2. Copy the Contract code
 
 3. Create new file in Remix and paste Contract code and wait for everything to load
 
